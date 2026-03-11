@@ -14,19 +14,22 @@ xe = (x + x_flip)/2;
 xo = (x - x_flip)/2;
 
 subplot(3,1,1)
-plot2d3(n,x)
+plot2d3(n,x,style=1)
 title("Original signal x(n)")
 xlabel("n")
 ylabel("x(n)")
+xgrid
 
 subplot(3,1,2)
-plot2d3(n,xe)
+plot2d3(n,xe,style=2)
 title("Even component xe(n)")
 xlabel("n")
 ylabel("xe(n)")
+xgrid
 
 subplot(3,1,3)
-plot2d3(n,xo)
+plot2d3(n,xo,style=3)
 title("Odd component xo(n)")
 xlabel("n")
 ylabel("xo(n)")
+xgrid

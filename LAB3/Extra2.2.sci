@@ -1,4 +1,3 @@
-// định nghĩa hàm x(n) dựa trên đồ thị đề bài
 function val = get_x(k)
     if (k >= -1 & k <= 2) then
         val = 1;
@@ -9,11 +8,9 @@ function val = get_x(k)
     end
 endfunction
 
-// chọn khoảng vẽ đồ thị rộng hơn để chứa hết các biến đổi
 n = -8:8;
 L = length(n);
 
-// khởi tạo các mảng lưu trữ kết quả
 xa = zeros(1, L);
 xb = zeros(1, L);
 xc = zeros(1, L);
